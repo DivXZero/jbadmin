@@ -1,0 +1,22 @@
+.pull-left
+  .menu-toggler.sidebar-toggler
+    %span
+
+.top-menu
+  %ul.nav.navbar-nav.pull-right
+    %li.dropdown.dropdown-user
+      %a.dropdown-toggle{ href: '#', data: { toggle: 'dropdown', hover: 'dropdown', 'close-others': 'true' } }
+        = gravatar_image_tag 'user@example.com', class: 'img-circle', gravatar: { size: 29 }
+        %span.username.username-hide-on-mobile
+          Guest
+        %i.fa.fa-angle-down
+      %ul.dropdown-menu.dropdown-menu-default
+        %li
+          =link_to '#' do
+            %i.fa.fa-user-circle-o
+            My Profile
+        %li.divider
+        %li
+          = link_to '#' do
+            %i.fa.fa-sign-out
+            Log Out

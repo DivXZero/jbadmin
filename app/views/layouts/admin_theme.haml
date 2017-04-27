@@ -1,0 +1,33 @@
+!!! 5
+%html
+  %head
+    %title= Jbadmin.site_title + (content_for?(:page_title) ? ' : ' + yield(:page_title) : '')
+
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', 'jbadmin/theme', media: 'all'
+    = javascript_include_tag 'application', 'jbadmin/theme'
+
+  %body.page-header-fixed.page-sidebar-closed-hide-logo.page-content-white.page-md
+    .page-wrapper
+      .page-header.navbar.navbar-fixed-top
+        .page-header-inner
+          = render 'layouts/header_content'
+
+      .clearfix
+      .page-container
+        = render 'layouts/admin_theme_sidebar'
+
+        .page-content-wrapper
+          .page-content
+            .page-bar
+              %ul.page-breadcrumb
+                %li= render_breadcrumbs separator: Jbadmin.breadcrumb_separator
+              .page-toolbar
+                = content_for(:toolbar)
+
+            = render 'layouts/notifications'
+
+            %h1.page-title
+              = content_for(:content_title)
+
+            = yield

@@ -1,0 +1,11 @@
+- if notice
+  .alert.alert-success.alert-dismissable.fade.in
+    %button.close{aria: {hidden: 'true'}, data: {'dismiss': 'alert'}}
+    %i.fa-fw.fa.fa-check
+    = notice.html_safe
+
+- if alert
+  .alert.alert-warning.alert-dismissable.fade.in
+    %button.close{aria: {hidden: 'true'}, data: {'dismiss': 'alert'}}
+    %i.fa-fw.fa.fa-warning
+    = alert.html_safe

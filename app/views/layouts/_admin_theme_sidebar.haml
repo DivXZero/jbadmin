@@ -1,0 +1,10 @@
+.page-sidebar-wrapper
+  .page-sidebar.navbar-collapse.collapse
+    %ul.page-sidebar-menu.page-header-fixed{ data: { 'keep-expanded': 'false', 'auto-scroll': 'true', 'slide-speed': '200' }, style: 'padding-top: 20px' }
+      %li.sidebar-toggler-wrapper.hide
+        .sidebar-toggler
+          %span
+
+      = render 'layouts/sidebar_search'
+
+      = render 'layouts/sidebar_links'

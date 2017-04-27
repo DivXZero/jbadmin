@@ -1,0 +1,19 @@
+!!! 5
+%html
+  %head
+    %title= Jbadmin.site_title + (content_for?(:page_title) ? ' : ' + yield(:page_title) : '')
+
+    = csrf_meta_tags
+    = stylesheet_link_tag    'jbadmin/login', media: 'all'
+    = javascript_include_tag 'jbadmin/theme'
+
+  %body.login
+
+    .logo
+      = link_to root_path do
+        %h2= content_for(:content_title)
+
+    .content
+      = render 'layouts/notifications'
+
+      = yield

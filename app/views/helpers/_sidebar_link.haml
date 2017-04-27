@@ -1,0 +1,7 @@
+%li.nav-item{ class: ('active' if active_path?(path)) }
+  = link_to path, class: 'nav-link' do
+    - if !fa_icon.nil?
+      %i.fa{ class: "fa-#{fa_icon}" }
+    %span.title= label
+    - if active_path?(path)
+      %span.selected

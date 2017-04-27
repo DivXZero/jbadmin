@@ -1,0 +1,16 @@
+
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "layouts/layout/themes/darkblue";
+@import "layouts/layout/layout";
+@import "global/theme_components";
+@import "global/theme_plugins";
+
+.sidebar-toggler {
+  padding-left: 1em;
+}
+
+.alert {
+  margin-top: 20px;
+}
