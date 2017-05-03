@@ -4,8 +4,8 @@
     %title= Jbadmin.site_title + (content_for?(:page_title) ? ' : ' + yield(:page_title) : '')
 
     = csrf_meta_tags
-    = stylesheet_link_tag    'application', 'jbadmin/theme', media: 'all'
-    = javascript_include_tag 'application', 'jbadmin/theme'
+    = stylesheet_link_tag    'jbadmin/theme', 'application', media: 'all'
+    = javascript_include_tag 'jbadmin/theme', 'application'
 
   %body.page-header-fixed.page-sidebar-closed-hide-logo.page-content-white.page-md
     .page-wrapper
