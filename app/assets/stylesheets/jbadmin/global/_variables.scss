@@ -6,17 +6,30 @@
 @import "../bootstrap/variables";
 @import "../bootstrap/mixins";
 
+@font-face {
+	font-family: 'univers_55roman';
+	src: font-url('univers-webfont.woff2') format('woff2'),
+	font-url('univers-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
 $direction: 						'ltr' !default;
-$theme-style: 						'square' !default;         
+$theme-style: 						'square' !default;
 $theme-type:  						'default' !default;
     
 //##  Typography
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-primary:  	  		 	"Open Sans", sans-serif !default;
-$font-family-nav:	  		 		Roboto, sans-serif !default;
-$font-family-default:  	  		 	"Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-primary: 'univers_55roman', sans-serif !default;
+$font-family-nav: 'univers_55roman', sans-serif !default;
+$font-family-default: 'univers_55roman', sans-serif !default;
+
+//$font-family-primary:  	  		 	"Open Sans", sans-serif !default;
+//$font-family-nav:	  		 		Roboto, sans-serif !default;
+//$font-family-default:  	  		 	"Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 $general-heading-color:				#3f444a;
 $general-text-color:  				darken(#677581, 5%);
@@ -45,7 +58,7 @@ $general-border-radius:				4px !default;
 	$general-border-radius:			2px !global;
 } 
 
-$dropdown-shadow:					5px 5px rgba(#666, 0.1);
+$dropdown-shadow:					0px 0px rgba(#666, 0.1);
 $icon-size-normal:					14px !default;
 $brand-default:						lighten(#b7c0ce, 1%) !default;  
 $general-panel-bg-color:			#f1f4f7 !default;

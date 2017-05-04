@@ -2,7 +2,7 @@
   %a.nav-link.nav-toggle{ href: 'javascript:;' }
     - if !fa_icon.nil?
       %i.fa{ class: "fa-#{fa_icon}" }
-    %span.title= label
+    %span.title= label.upcase
     %span.arrow{ class: ('open' if active_path?(path)) }
   %ul.sub-menu
     = children

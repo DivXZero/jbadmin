@@ -11,7 +11,7 @@ Login page
 ***/
 
 /* bg color */
-$bg-color: #5c97bd;
+$bg-color: #002072;
 
 .login {
   background-color: $bg-color;
@@ -69,14 +69,14 @@ $bg-color: #5c97bd;
 
 .login .content .form-control {
   border: none;
-  background-color: #6ba3c8;
-  border: 1px solid #6ba3c8;
+  background-color: darken($bg-color, 4%);
+  border: 1px solid darken($bg-color, 10%);
   height: 43px; 
   color: #d9ecf9;
   
   &:focus,
   &:active {
-      border: 1px solid #83b8db;
+      border: 1px solid lighten($bg-color, 10%);
   }
 
   @include placeholder(#d9ecf9);

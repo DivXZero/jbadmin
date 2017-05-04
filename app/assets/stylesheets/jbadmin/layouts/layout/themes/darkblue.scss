@@ -9,12 +9,12 @@
 
 // Main settings
 $theme-name:                                                    		"darkblue";  
-$brand-main-color:                                               		lighten(#32c5d2, 1%) !default;      
+$brand-main-color:                                               		lighten(#00b8e4, 1%) !default;
 $brand-main-font-color:													#ffffff !default;
   
 // Body and header
-$bg-color:                                                      		#364150 !default;
-$header-bg-color:                                               		#2b3643 !default;  
+$bg-color:                                                      		#FFFFFF !default;
+$header-bg-color:                                               		#002072 !default;
 $header-toggler-color:                                                  lighten($header-bg-color, 50%) !default;  
 $header-toggler-bg-color:                                               darken($bg-color, 5%) !default;  
 

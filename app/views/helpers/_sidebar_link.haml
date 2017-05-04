@@ -2,6 +2,6 @@
   = link_to path, class: 'nav-link' do
     - if !fa_icon.nil?
       %i.fa{ class: "fa-#{fa_icon}" }
-    %span.title= label
+    %span.title= label.upcase
     - if active_path?(path)
-      %span.selected
+      %span

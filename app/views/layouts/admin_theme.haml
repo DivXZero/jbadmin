@@ -18,16 +18,19 @@
         = render 'layouts/admin_theme_sidebar'
 
         .page-content-wrapper
-          .page-content
-            .page-bar
-              %ul.page-breadcrumb
-                %li= render_breadcrumbs separator: Jbadmin.breadcrumb_separator
-              .page-toolbar
-                = content_for(:toolbar)
+          .page-content.contentside
+            .content
+              .page-bar
+                %ul.page-breadcrumb
+                  %li= render_breadcrumbs separator: Jbadmin.breadcrumb_separator
+                .page-toolbar
+                  = content_for(:toolbar)
 
-            = render 'layouts/notifications'
+              = render 'layouts/notifications'
 
-            %h1.page-title
-              = content_for(:content_title)
+              - if content_for?(:content_title)
+                %h1.page-title
+                  = content_for(:content_title)
+                  %hr.drawOut
 
-            = yield
+              = yield

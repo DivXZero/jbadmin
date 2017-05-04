@@ -1,5 +1,5 @@
 %li{class: (active_action?(path) ? 'nav-item active open' : 'nav-item')}
   = link_to path, class: 'nav-link' do
-    %span.title= label
+    %span.title= label.capitalize
     - if active_action?(path)
       %span.selected
