@@ -14,7 +14,7 @@
 			~ label,
 			~ .form-control-focus {
 				&:after {
-					background: $color; 
+					background: $color;
 				}        
 			}
 
@@ -70,7 +70,7 @@
 		border-bottom: 1px solid $input-md-input-border; 
 		@include placeholder($input-md-placeholder);  
 		@include border-radius(0);   
-		color: $input-md-color;  
+		color: $input-md-color;
 		box-shadow: none;
 		
 		&.form-control-static {

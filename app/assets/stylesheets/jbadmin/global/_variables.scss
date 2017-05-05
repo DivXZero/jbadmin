@@ -15,6 +15,13 @@
 
 }
 
+@font-face {
+	font-family: 'Benton Modern';
+	src: font-url('BentonModernTextRegular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
 $direction: 						'ltr' !default;
 $theme-style: 						'square' !default;
 $theme-type:  						'default' !default;
@@ -24,6 +31,7 @@ $theme-type:  						'default' !default;
 // Font, line-height, and color for body text, headings, and more.
 
 $font-family-primary: 'univers_55roman', sans-serif !default;
+$font-family-secondary: 'Benton Modern', serif !default;
 $font-family-nav: 'univers_55roman', sans-serif !default;
 $font-family-default: 'univers_55roman', sans-serif !default;
 
@@ -31,7 +39,7 @@ $font-family-default: 'univers_55roman', sans-serif !default;
 //$font-family-nav:	  		 		Roboto, sans-serif !default;
 //$font-family-default:  	  		 	"Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
-$general-heading-color:				#3f444a;
+$general-heading-color:				#00bce9;
 $general-text-color:  				darken(#677581, 5%);
 $general-transition:				all 0.3s;
 
@@ -45,12 +53,12 @@ $text-light-color:     	 			#ffffff !default;
 $text-muted-color:      			#444444 !default;
    
 // Global textual link color.
-$link-color:            			#5b9bd1 !default;
+$link-color:            			#00bce9 !default;
 
 // Link hover color.
 $link-hover-color:      			darken($link-color, 15%) !default;
 
-$primary-link-color:                #65A0D0 !default;
+$primary-link-color:                #00bce9 !default;
 
 $general-border-radius:				4px !default;
 
@@ -60,7 +68,7 @@ $general-border-radius:				4px !default;
 
 $dropdown-shadow:					0px 0px rgba(#666, 0.1);
 $icon-size-normal:					14px !default;
-$brand-default:						lighten(#b7c0ce, 1%) !default;  
+$brand-default:						lighten(#002072, 1%) !default;
 $general-panel-bg-color:			#f1f4f7 !default;
 $general-panel-border-color:		darken(#f1f4f7, 3%) !default;
 $general-panel-font-color:			#3f444a !default;
