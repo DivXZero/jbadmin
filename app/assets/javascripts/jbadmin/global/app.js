@@ -583,7 +583,7 @@ var App = function() {
             handleOnResize(); // set and handle responsive    
 
             //UI Component handlers     
-            handleMaterialDesign(); // handle material design       
+            handleMaterialDesign(); // handle material design
             handleiCheck(); // handles custom icheck radio and checkboxes
             handleBootstrapSwitch(); // handle bootstrap switch plugin
             handleScrollers(); // handles slim scrolling contents 
