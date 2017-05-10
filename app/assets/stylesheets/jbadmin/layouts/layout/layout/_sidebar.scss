@@ -154,7 +154,7 @@ Page sidebar
 						font-size: $sidebar-menu-link-icon-font-size;
 						font-family: FontAwesome;
 						height: auto;
-						content: "\f104";
+						content: "\f0d9";
 						font-weight: 300;
 						text-shadow:none;
 						position: absolute;
@@ -163,7 +163,7 @@ Page sidebar
 					}
 
 					&.open:before {   
-						content: "\f107";
+						content: "\f0d7";
 					}
 				}
 
